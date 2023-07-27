@@ -19,8 +19,9 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 p {
-  margin-left: 0;
+  margin: 0;
   display: inline-block;
+  text-align: center;
 }
 h3 {
   margin: 0;
@@ -149,7 +150,8 @@ h1 {
 }
 .container {
   padding: 80px 20px;
-  width: 100%;
+  width: min(1500px, 100%);
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -181,7 +183,6 @@ h1 {
 }
 
 /* Services styles */
-
 .heading {
   width: min(100%, 900px);
 }
@@ -261,10 +262,10 @@ h1 {
 }
 
 /* Portfolio styles */
-
-.portfolio .container {
+.portfolio {
   background-color: var(--section-background);
 }
+
 .projects {
   margin-top: 100px;
   display: flex;
@@ -338,7 +339,7 @@ h1 {
   height: 350px;
   width: 60px;
   background-color: #e9e9e9;
-  top: -10%;
+  top: -25%;
   left: -7%;
 }
 .about .second {
@@ -369,10 +370,13 @@ h1 {
   font-weight: bolder;
   color: var(--secondary-color);
   letter-spacing: -1px;
+  text-align: center;
 }
 .contact .area a {
   color: var(--main-color);
   text-decoration: none;
+  width: min(450px, 100%);
+  font-size: 25px;
 }
 .contact .area p:last-child {
   font-size: 15px;
@@ -384,6 +388,8 @@ footer {
   height: 50px;
   width: 100%;
   background-color: #016b5f;
+  display: flex;
+  align-items: center;
 }
 footer .container {
   padding: 0;
