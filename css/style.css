@@ -25,9 +25,14 @@ p {
 }
 h3 {
   margin: 0;
+  text-align: center;
 }
 .container {
   padding: 20px 20px 80px;
+}
+i {
+  text-align: center;
+  width: 20px;
 }
 /* End global styles  */
 
@@ -182,6 +187,9 @@ h1 {
   text-align: center;
 }
 
+/* It would be better to use grid system and use grid-c-t: repeat( auto-fill, minmax(300px,1fr) ) and grid-gap: 20px */
+/* The section will be responsive automatically using grid */
+
 /* Services styles */
 .heading {
   width: min(100%, 900px);
@@ -213,6 +221,7 @@ h1 {
 }
 .service {
   display: flex;
+  justify-content: center;
   width: 250px;
   margin: 10px;
 }
@@ -239,6 +248,11 @@ h1 {
   .side-image {
     display: none;
     width: 0%;
+  }
+  .service {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 /* end media  */
@@ -351,7 +365,7 @@ h1 {
   border-bottom: 60px solid var(--main-color);
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .side-description {
     align-items: center;
   }
@@ -377,6 +391,11 @@ h1 {
   text-decoration: none;
   width: min(450px, 100%);
   font-size: 25px;
+}
+@media (max-width: 991px) {
+  .contact .area a {
+    font-size: 20px;
+  }
 }
 .contact .area p:last-child {
   font-size: 15px;
